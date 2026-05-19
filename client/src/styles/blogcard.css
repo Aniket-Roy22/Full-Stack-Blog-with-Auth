@@ -1,9 +1,11 @@
 .blog-card {
-	border: 1px solid #ccc;
-	padding: 1rem;
-	border-radius: 8px;
-	margin-bottom: 1rem;
-	background-color: white;
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	box-shadow:
+		0 4px 10px rgba(0, 0, 0, 0.04),
+		0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .blog-link {
@@ -12,35 +14,89 @@
 	display: block;
 }
 
+.blog-link h2 {
+	text-align: left;
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: #111827;
+	transition: color 0.2s ease;
+}
+
 .blog-link:hover h2 {
-	text-decoration: underline;
+	color: #2563eb;
 }
 
 .blog-author {
 	font-size: 0.9rem;
-	color: gray;
-	margin-top: 0.5rem;
+	text-align: left;
+	color: #6b7280;
+	font-weight: 500;
+	margin: 0 0 1rem;
 }
 
 .blog-content {
-	margin: 1rem 0;
-	line-height: 1.5;
+	color: #374151;
+	text-align: left;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+	word-break: break-word;
 }
 
 .blog-footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-top: 1px solid #cecece;
+	padding-top: 1rem;
+}
+
+.blog-date {
+	bottom: 0;
+	font-size: 0.85rem;
+	color: #999b9e;
 }
 
 .blog-actions {
 	display: flex;
-	gap: 0.5rem;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .edit-btn,
 .delete-btn {
-	padding: 0.4rem 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
 	cursor: pointer;
 	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease,
+		color 0.2s ease;
+}
+
+.edit-btn {
+	background-color: #eff6ff;
+}
+
+.edit-btn:hover {
+	background-color: #dbeafe;
+	transform: scale(1.08);
+}
+
+.delete-btn {
+	background-color: #fef2f2;
+}
+
+.delete-btn:hover {
+	background-color: #fee2e2;
+	transform: scale(1.08);
 }

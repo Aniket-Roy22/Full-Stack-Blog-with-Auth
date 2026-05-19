@@ -48,12 +48,12 @@ function MyPosts()
 
 	if (loading)
 	{
-		return <h1>Loading...</h1>;
+		return <h1 className="homepage-heading">Loading...</h1>;
 	}
 
 	return (
 		<div className="home-container">
-			<h1>My Posts</h1>
+			<h1 className="homepage-heading">My Posts</h1>
 
 			{blogs.length === 0 ? (
 				<h2>No posts found</h2>

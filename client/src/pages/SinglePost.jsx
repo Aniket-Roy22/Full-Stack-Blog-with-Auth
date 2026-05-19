@@ -57,7 +57,7 @@ function SinglePost()
 	}
 
 	return (
-		<div className="single-post-container">
+		<div className="single-post-container home-container">
 			<BlogCard
 				blog={blog}
 				currentUserId={user?.id}

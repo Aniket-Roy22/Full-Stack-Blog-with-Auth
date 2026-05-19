@@ -4,6 +4,12 @@
 	padding: 1rem;
 }
 
+.homepage-heading
+{
+	font-size: 4rem;
+	color: white;
+}
+
 .home-title {
 	margin-bottom: 2rem;
 }

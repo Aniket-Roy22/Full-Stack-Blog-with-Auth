@@ -49,12 +49,12 @@ function Home()
 
 	if (loading)
 	{
-		return <h1>Loading...</h1>;
+		return <h1 className="homepage-heading">Loading...</h1>;
 	}
 
 	return (
 		<div className="home-container">
-			<h1>Latest Blogs</h1>
+			<h1 className="homepage-heading">Latest Blogs</h1>
 
 			{blogs.map((blog) => (
 				<BlogCard
