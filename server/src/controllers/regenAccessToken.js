@@ -7,9 +7,11 @@ export function regenAccessToken(req, res)
 		id: id,
 		username: username,
 	};
-
 	const newAccessToken = generateAccessToken(payload);
-	res.status(200).json({
+
+	return res.status(200).json({
+		success: true,
 		accessToken: newAccessToken,
+		user: payload,
 	});
 }

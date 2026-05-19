@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.post("/create", authenticateAccessToken, createPost);
 router.get("/all", getBlogsAll);
-router.get("/user", getBlogsByUser);
+router.get("/user",authenticateAccessToken, getBlogsByUser);
 router.get("/:id", getBlogById);
 router.patch("/update/:id", authenticateAccessToken, updatePost);
 router.delete("/delete/:id", authenticateAccessToken, deletePost);

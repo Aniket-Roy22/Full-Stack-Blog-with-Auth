@@ -1,0 +1,9 @@
+.home-container {
+	max-width: 900px;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+
+.home-title {
+	margin-bottom: 2rem;
+}

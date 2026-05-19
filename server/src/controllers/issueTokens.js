@@ -15,9 +15,10 @@ export function issueTokens(req, res)
 		secure: false,
 		path: "/auth",
 		sameSite: "lax",
-		maxAge: 1 * 60 * 1000,
+		maxAge: 7 * 24 * 60 * 60 * 1000,
 	});
 	res.status(200).json({
 		accessToken: accessToken,
+		user: payload,
 	});
 }

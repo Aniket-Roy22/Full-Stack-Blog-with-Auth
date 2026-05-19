@@ -1,0 +1,46 @@
+.blog-card {
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	background-color: white;
+}
+
+.blog-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.blog-link:hover h2 {
+	text-decoration: underline;
+}
+
+.blog-author {
+	font-size: 0.9rem;
+	color: gray;
+	margin-top: 0.5rem;
+}
+
+.blog-content {
+	margin: 1rem 0;
+	line-height: 1.5;
+}
+
+.blog-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.blog-actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.edit-btn,
+.delete-btn {
+	padding: 0.4rem 0.8rem;
+	cursor: pointer;
+	text-decoration: none;
+}
