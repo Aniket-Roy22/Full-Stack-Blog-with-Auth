@@ -383,7 +383,11 @@ This project demonstrates:
 # Author
 
 **Intern ID:** CITS730
+<br>
 **Full Name:** Aniket Roy
+<br>
 **No. of Weeks:** 4
+<br>
 **Project Name:** Full-Stack Blog With Auth
+<br>
 **Project Scope:** The project aims to build a full-stack blog platform with secure authentication and blog CRUD functionality. Users can register, log in, create posts, edit/delete their own blogs, and browse blogs from other users. The project demonstrates frontend-backend integration using React, Express.js, Prisma, PostgreSQL, and JWT authentication.
